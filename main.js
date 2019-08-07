@@ -9,6 +9,6 @@ function init(){
 
         main.style.display = 'block';
         main.style.opacity = 1;
-    }, 10000);
+    }, 5000);
 }
 init();
