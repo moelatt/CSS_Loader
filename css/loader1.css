@@ -1,0 +1,43 @@
+
+.loader1{
+    height: 50px;
+    transform-origin: bottom center;
+    animation: rotate 6s linear infinite;
+}
+.circle1{
+    display: inline-block;
+    background-color: purple;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: grow 1.9s linear infinite;
+    animation-delay: .25;
+    margin: -10px;
+}
+.circle1:nth-child(2){
+    background-color: palevioletred;
+    animation: grow 2.5s linear infinite;
+    animation-delay: 0.75;
+}
+.circle1:nth-child(3){
+    background-color: rgb(112, 171, 216);
+    animation: grow 3.5s linear infinite;
+    animation-delay: 1.5;
+}
+.circle1:nth-child(4){
+    background-color: rgb(112, 216, 145);
+    animation: grow 4.5s linear infinite;
+    animation-delay: 2.5;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes grow{
+    50%{
+        transform: scale(1);
+    }
+}
